@@ -1,6 +1,6 @@
-﻿#!/bin/bash
+#!/bin/bash
 
-apiappname=ShoeCoAPI$(openssl rand -hex 5)
+apiappname="demo-ShoeCoAPI001"
 
 printf "Setting username and password for Git ... (1/7)\n\n"
 
@@ -12,10 +12,10 @@ git config --global user.name "$GIT_USERNAME"
 git config --global user.email "$GIT_EMAIL"
 
 
-RESOURCE_GROUP=$(az group list --query "[0].name" -o tsv)
+RESOURCE_GROUP=demo-restapi-rg
 
 # Create App Service plan
-PLAN_NAME=myPlan
+PLAN_NAME=demo-ShoeCoAPIPlan001
 
 
 printf "\nCreating App Service plan in FREE tier ... (2/7)\n\n"
