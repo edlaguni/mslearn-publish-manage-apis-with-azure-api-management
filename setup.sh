@@ -21,7 +21,7 @@ PLAN_NAME=demo-ShoeCoAPI-Plan001
 printf "\nCreating App Service plan in FREE tier ... (2/7)\n\n"
 
 
-az appservice plan create --name $apiappname --resource-group $RESOURCE_GROUP --sku FREE --location australiaeast --verbose
+az appservice plan create --name $PLAN_NAME --resource-group $RESOURCE_GROUP --sku FREE --location australiaeast --verbose
 
 printf "\nCreating API App ... (3/7)\n\n"
 
